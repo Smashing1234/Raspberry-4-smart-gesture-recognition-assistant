@@ -1,4 +1,4 @@
-#библиотеки
+# Libraries installation
 sudo apt update && sudo apt upgrade -y
 pip uninstall -y numpy protobuf
 pip install numpy==1.26.4 protobuf==4.25.3
@@ -10,16 +10,17 @@ sudo apt upgrade
 sudo apt install build-essential cmake git libgtk-3-dev libavcodec-dev libavformat-dev libswscale-dev
 pip install opencv-python
 
+# Create face detector directory
 mkdir -p face_detector
 cd face_detector
 
-# Скачайте необходимые файлы моделей
+# Download required model files
 wget https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/opencv_face_detector.pbtxt
 wget https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20180205_fp16/opencv_face_detector_uint8.pb
 
 
 
-# Рабочий код для проверки камеры:
+# Working code for camera testing:
 import cv2
 import time
 
