@@ -1,3 +1,4 @@
+![GitHub Repo stars](https://img.shields.io/github/stars/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&color=blue) ![GitHub watchers](https://img.shields.io/github/watchers/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&label=Views&color=green) ![GitHub top language](https://img.shields.io/github/languages/top/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&color=orange)
 # Raspberry 4 smart gesture recognition assistant
 Raspberry 4 smart gesture recognition assistant is an innovative gesture recognition system that creates a bridge between the world of the deaf and technology. It helps people with hearing impairments control their smart homes, call for emergency assistance, and receive information through simple gestures.
 
