@@ -4,6 +4,14 @@ Raspberry 4 smart gesture recognition assistant is an innovative gesture recogni
 ## Purpose and description
 Now I will explain step by step how I was able to implement this project. Before I start, I'll tell you what the point of all this is. I did this project to solve one of the social problems of the deaf and people with disabilities, I think it can give rise to something bigger and better.  My project is a kind of "voice assistant" Siri, Alice, and so on. Based on them, I made this project. My project can recognize gestures such as fist and the "OK" gesture, as well as recognize claps, while performing various tasks. The first task is to turn on and off a relay with an LED that simulates light, with two claps or clenching and unclenching of a fist.  Another task is to notify relatives to whom emergency messages are sent with an "OK" gesture.
 
+## Research objectives:
+- Analysis of communication needs of deaf and mute users
+- Development of gesture recognition algorithms
+- Implementation of the vibration feedback system
+- Integration with the smart home platform via MQTT
+- Creation of an emergency notification mechanism
+- Testing the system with the participation of a target group of users
+
 # Step-by-step implementation plan
 
 ## Part 1. Necessary resources
@@ -34,5 +42,8 @@ In this step, I've figured out how to recognize claps using a microphone, you ca
 ## Part 6. Sending notifications to Telegram. The "OK" gesture. Fist gesture. API Bot Telegram
 Here I was able to initialize the OK gesture, after which a telegram notification is sent. I also connected it with a 4-part code, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Sending%20notifications%20in%20telegram.py)
 
-## The last part. Usage: ESP8266, Relay, MQTT, Tasmota, LED, Resistor, Clap recognition, gesture recognition
+## Part 7. Usage: ESP8266, Relay, MQTT, Tasmota, LED, Resistor, Clap recognition, gesture recognition
 Here I combined all the parts into one, using a relay and an LED and a resistor, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Connecting%20Relay.py)
+
+## Conclusions
+The developed system demonstrates the effectiveness of gesture control for deaf and dumb users, providing them with equal access to smart home technologies and increasing the level of independence and security.
