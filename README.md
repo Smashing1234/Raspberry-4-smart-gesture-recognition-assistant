@@ -34,5 +34,5 @@ In this step, I've figured out how to recognize claps using a microphone, you ca
 ## Part 6. Sending notifications to Telegram. The "OK" gesture. Fist gesture. API Bot Telegram
 Here I was able to initialize the OK gesture, after which a telegram notification is sent. I also connected it with a 4-part code, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Sending%20notifications%20in%20telegram.py)
 
-## The last part. Usage: ESP8266, Relay, MQTT, LED, Resistor, Clap recognition, gesture recognition
+## The last part. Usage: ESP8266, Relay, MQTT, Tasmota, LED, Resistor, Clap recognition, gesture recognition
 Here I combined all the parts into one, using a relay and an LED and a resistor, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Connecting%20Relay.py)
