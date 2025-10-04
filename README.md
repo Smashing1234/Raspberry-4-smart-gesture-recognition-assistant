@@ -19,10 +19,20 @@ The very first thing you need to do is download the system image 2025-05-06-rasp
 <img width="680" height="480" alt="image" src="https://github.com/user-attachments/assets/2e958e31-4f34-453b-839f-ccad278bf7c0" />
 
 ## Part 3. Installing libraries for hand recognition. Code
-The next step is to download the libraries for gesture recognition and camera control, you can do it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Hand%20recognition.py)
+The next step is to download the libraries for gesture recognition and camera control, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Hand%20recognition.py)
 
-## Part 4. Installing Tasmota. MQTT.  ESP8266. Turning lights on and off with a fist gesture
-In the next step, we will be able to control the ESP8266 using Raspberry 4, you can do it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/MQTT%20connection.py)
+## Part 4. Installing Tasmota. MQTT. Fist gesture. ESP8266. Turning lights on and off with a fist gesture
+In the next step, we will be able to control the ESP8266 using Raspberry 4, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/MQTT%20connection.py) and you can download the Tasmota version [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/tasmota.bin)
+
+<img width="492" height="459" alt="image" src="https://github.com/user-attachments/assets/858af6f7-f63c-4ed2-a995-c1088fb93cbe" />
+
+To download firmware 13.04.0, you need to download Tasmotizer and select your BIN file in it.
 
 ## Part 5. Pyaudio. microphone. Claps recognition
-In this step, I've figured out how to recognize claps using a microphone, you can do it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Clap%20recognition.py)
+In this step, I've figured out how to recognize claps using a microphone, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Clap%20recognition.py)
+
+## Part 6. Sending notifications to Telegram. The "OK" gesture. Fist gesture. API Bot Telegram
+Here I was able to initialize the OK gesture, after which a telegram notification is sent. I also connected it with a 4-part code, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Sending%20notifications%20in%20telegram.py)
+
+## The last part. Usage: ESP8266, Relay, MQTT, LED, Resistor, Clap recognition, gesture recognition
+Here I combined all the parts into one, using a relay and an LED and a resistor, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Connecting%20Relay.py)
