@@ -1,4 +1,5 @@
-#Before you start installing libraries and coding, install the firmware (iso) for Raspberry 4 shown on the main page, I installed it via Raspberry Pi Imager using my (iso) image
+# Before you start installing libraries and coding, install the firmware (iso) for Raspberry 4 shown on the main page, I installed it via Raspberry Pi Imager using my (iso) image
+# In order for everything to work, you will need a camera.
 # Libraries installation
 sudo apt update && sudo apt upgrade -y
 pip uninstall -y numpy protobuf
@@ -107,4 +108,5 @@ while True:
 capture.release()
 out.release()
 cv2.destroyAllWindows()
+
 
