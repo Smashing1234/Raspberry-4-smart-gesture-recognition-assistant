@@ -9,3 +9,7 @@ Raspberry 4 or 5, Power supply, SD card from 16 GB, the more the better, a camer
 ESP8266, a power supply for it, see the relay in the photo, a breadboard, but you can also use it without it, wires, an LED, a resistor. You definitely need a PC and an Internet connection.
 
 ![IMG_3336 (2)](https://github.com/user-attachments/assets/485a997f-3fd9-454a-a977-d546a491f7b0)
+
+The very first thing you need to do is download the system image 2025-05-06-raspios-bullseye-arm64.img.xz (you can install its archive by going to the main window) and install it on the SD using the Raspberry Pi Imager program. To do this, run the Raspberry Pi Imager program, select which device you will install on, and then select with another button that you want to use your img image. And install it
+
+<img width="680" height="480" alt="image" src="https://github.com/user-attachments/assets/2e958e31-4f34-453b-839f-ccad278bf7c0" />
