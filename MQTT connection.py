@@ -1,3 +1,4 @@
+#Before you start installing libraries and coding, install the firmware 13.04.0 for ESP8266 listed on the homepage, I installed it via Tasmotizer using my (bin) image
 # On Raspberry Pi 4:
 # Complete installation
 sudo apt remove --purge mosquitto mosquitto-client  # If installed incorrectly
@@ -168,5 +169,6 @@ cv2.destroyAllWindows()
 mqtt_client.loop_stop()
 mqtt_client.disconnect()
 print("System stopped")
+
 
 # If connection fails, reconnect and reboot ESP
