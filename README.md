@@ -18,7 +18,7 @@ The very first thing you need to do is download the system image 2025-05-06-rasp
 
 <img width="680" height="480" alt="image" src="https://github.com/user-attachments/assets/2e958e31-4f34-453b-839f-ccad278bf7c0" />
 
-## Part 3. Installing libraries for hand recognition. Code
+## Part 3. Installing libraries for hand recognition. OpenCV. Mediapipe. Hand recognition
 The next step is to download the libraries for gesture recognition and camera control, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Hand%20recognition.py)
 
 ## Part 4. Installing Tasmota. MQTT. Fist gesture. ESP8266. Turning lights on and off with a fist gesture
