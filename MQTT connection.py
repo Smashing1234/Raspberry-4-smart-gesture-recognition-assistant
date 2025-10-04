@@ -46,7 +46,7 @@ import paho.mqtt.client as mqtt
 import json
 
 # ===== MQTT Settings =====
-MQTT_BROKER = "192.168.1.40"  # Your Raspberry Pi IP - set it yourself!!!!!
+MQTT_BROKER = ""  # Your Raspberry Pi IP - set it yourself!!!!!
 MQTT_PORT = 1883
 MQTT_TOPIC = "cmnd/tasmota_DEE65D/POWER"
 MQTT_USER = "DVES_USER"  # if exists
@@ -172,3 +172,4 @@ print("System stopped")
 
 
 # If connection fails, reconnect and reboot ESP
+
