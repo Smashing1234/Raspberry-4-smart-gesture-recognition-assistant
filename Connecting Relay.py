@@ -42,11 +42,11 @@ import os
 import threading
 
 # ===== Settings =====
-TELEGRAM_BOT_TOKEN = "7125494325:AAEOSMBbpjZgqoIArsCex3hblWWsNFjOyiE"
-TELEGRAM_CHAT_ID = "1880548453"
+TELEGRAM_BOT_TOKEN = ""
+TELEGRAM_CHAT_ID = ""
 
 # ===== MQTT Settings =====
-MQTT_BROKER = "172.20.10.2"  # Raspberry Pi IP
+MQTT_BROKER = ""  # Raspberry Pi IP
 MQTT_PORT = 1883
 MQTT_TOPIC = "cmnd/tasmota_DEE65D/POWER"
 MQTT_USER = "DVES_USER"
@@ -456,3 +456,4 @@ finally:
     mqtt_client.loop_stop()
     mqtt_client.disconnect()
     print("✅ System stopped cleanly")
+
