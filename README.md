@@ -46,5 +46,7 @@ Here I was able to initialize the OK gesture, after which a telegram notificatio
 ## Part 7. Usage: ESP8266, Relay, MQTT, Tasmota, LED, Resistor, Clap recognition, gesture recognition
 Here I combined all the parts into one, using a relay and an LED and a resistor, you can see it [here](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/blob/main/Connecting%20Relay.py)
 
+![photo_2025-10-11_10-55-32](https://github.com/user-attachments/assets/83e17a95-42ed-482b-8ba0-95bdaffbf7cb)
+
 ## Conclusions
 The developed system demonstrates the effectiveness of gesture control for deaf and dumb users, providing them with equal access to smart home technologies and increasing the level of independence and security.
