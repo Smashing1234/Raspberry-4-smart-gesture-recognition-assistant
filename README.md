@@ -87,4 +87,4 @@ To test the concept, a functional prototype of the system was assembled and impl
 
 
 ## Conclusion
-A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home.
+A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home. Recognition accuracy: 72% (gestures), 65% (claps), execution delays vary from 1.5 to 3 seconds depending on the action
