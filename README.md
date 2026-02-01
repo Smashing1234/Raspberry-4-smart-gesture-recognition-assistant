@@ -1,16 +1,15 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&color=blue) ![GitHub watchers](https://img.shields.io/github/watchers/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&label=Views&color=green) ![GitHub top language](https://img.shields.io/github/languages/top/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant?style=for-the-badge&color=orange)
 # Raspberry 4 smart gesture recognition assistant
-Raspberry 4 smart gesture recognition assistant is an innovative gesture recognition system that creates a bridge between the world of the deaf and technology. It helps people with hearing impairments control their smart homes, call for emergency assistance, and receive information through simple gestures.
+The main motivation behind the project is to help people with hearing impairments gain easy access to smart home technologies. Since voice assistants are useless for them, and wearable devices like hearing-impaired gloves are not always convenient, the Smart Gesture Station was created. It is a prototype based on Raspberry Pi that uses a camera to recognize intuitive gestures, allowing users to control their homes and send emergency signals quickly, without the need for voice.
 
 ## Purpose and description
 Now I will explain step by step how I was able to implement this project. Before I start, I'll tell you what the point of all this is. I did this project to solve one of the social problems of the deaf and people with disabilities, I think it can give rise to something bigger and better.  My project is a kind of "voice assistant" Siri, Alice, and so on. Based on them, I made this project. My project can recognize gestures such as fist and the "OK" gesture, as well as recognize claps, while performing various tasks. The first task is to turn on and off a relay with an LED that simulates light, with two claps or clenching and unclenching of a fist.  Another task is to notify relatives to whom emergency messages are sent with an "OK" gesture.
 
-## Research objectives:
-- Analysis of communication needs of deaf and mute users
-- Development of gesture recognition algorithms
-- Implementation of the vibration feedback system
-- Integration with the smart home platform via MQTT
-- Creation of an emergency notification mechanism
+## Project objectives:
+- Develop an algorithm for recognizing intuitive gestures (fist, "OK") and sound patterns (clap) based on computer vision and audio analysis libraries.
+- Implement a wireless device control module using the MQTT protocol and an emergency notification system using the Telegram Bot API.
+- Design, build, and programmatically configure a hardware prototype based on Raspberry Pi with a camera, microphone, and feedback modules (LCD display, sensors).
+- Test the prototype's functionality by evaluating its recognition accuracy, response latency, and overall practical applicability.
 
 # Step-by-step implementation plan
 
