@@ -51,8 +51,6 @@ Here I combined all the parts into one, using a relay and an LED and a resistor,
 ## Part 8.1. Upgrade to Sonoff R4
 I changed the esp8266 to an esp32. The esp32 and the relay were built into the sonoff R4 module, so I only had to flash the esp32 and install Tasmota.
 
-![photo_5_2026-01-31_09-54-09](https://github.com/user-attachments/assets/b576370d-01fd-449f-9536-dd0e29d1887a)
-
 <img width="353" height="810" alt="tasmota 1 1 jpg" src="https://github.com/user-attachments/assets/d2554f68-296f-47e2-b05a-c3390a4b4c2d" />
 
 ## Part 8.2. Creating a case
@@ -65,8 +63,24 @@ I also added the lcd1602 display (using the i2c protocol) and the DHT11 module t
 
 ![photo_4_2026-01-31_09-54-09](https://github.com/user-attachments/assets/01d97ac1-b48b-4dd1-8be1-a830fbf975f2)
 
-## Part 8.4. Mini withdrawal
+## Part 8.4. Mini conclusion
 In general, the changes were more visual. I switched to a ready-made version in the form of a sonoff R4, and I also used a screen to display the program's status, including temperature and humidity data.
 
-## Conclusions
+## Results
+To test the concept, a functional prototype of the system was assembled and implemented in software. In practice, it was possible to verify how the theoretical principles — lightweight geometric gesture analysis instead of ML, local data processing, and a modular architecture — are implemented in a real device. 
+
+- Results of the total delay of the fist recognition (from recognition to changing the relay state):
+
+<img width="819" height="455" alt="кулак фото" src="https://github.com/user-attachments/assets/b7e4740f-8f47-4ea8-82fa-f779c8fe7024" />
+
+- Results of the total delay of the "OK" gesture recognition (from recognition to changing the relay state):
+
+<img width="736" height="204" alt="хлопок фото" src="https://github.com/user-attachments/assets/85c3b8e9-eac4-44cf-9ee7-edfcc3217897" />
+
+- Program completion percentage results:
+
+<img width="935" height="598" alt="проц выпол фото" src="https://github.com/user-attachments/assets/b1fb3f2d-b13f-4756-861e-edd1d6178446" />
+
+
+## Conclusion
 A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home.
