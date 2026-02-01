@@ -10,6 +10,10 @@ Now I will explain step by step how I was able to implement this project. Before
 - Implement a wireless device control module using the MQTT protocol and an emergency notification system using the Telegram Bot API.
 - Design, build, and programmatically configure a hardware prototype based on Raspberry Pi with a camera, microphone, and feedback modules (LCD display, sensors).
 - Test the prototype's functionality by evaluating its recognition accuracy, response latency, and overall practical applicability.
+  
+## Performance
+
+https://github.com/user-attachments/assets/2430dc74-bb1f-4c9f-a8ee-8e46b0dc5894
 
 # Step-by-step implementation plan
 
