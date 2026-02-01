@@ -11,7 +11,6 @@ Now I will explain step by step how I was able to implement this project. Before
 - Implementation of the vibration feedback system
 - Integration with the smart home platform via MQTT
 - Creation of an emergency notification mechanism
-- Testing the system with the participation of a target group of users
 
 # Step-by-step implementation plan
 
