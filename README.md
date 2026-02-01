@@ -58,7 +58,7 @@ I changed the esp8266 to an esp32. The esp32 and the relay were built into the s
 <img width="353" height="810" alt="tasmota 1 1 jpg" src="https://github.com/user-attachments/assets/d2554f68-296f-47e2-b05a-c3390a4b4c2d" />
 
 ## Part 8.2. Creating a case
-In order to make my project look like a regular mini-station, I had to create and print a 3D model of the [case]. Keep in mind that I already have active cooling for the case, which significantly changes the original dimensions.
+In order to make my project look like a regular mini-station, I had to create and print a 3D model of the [case](https://github.com/Smashing1234/Raspberry-4-smart-gesture-recognition-assistant/commit/7dd63af01491b17ffcb7aef9a9fa4ca3d35caa46). Keep in mind that I already have active cooling for the case, which significantly changes the original dimensions.
 
 <img width="926" height="743" alt="весь корпус" src="https://github.com/user-attachments/assets/4a02ab51-2de7-46a6-8145-94737e3895e5" />
 
