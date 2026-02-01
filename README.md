@@ -47,5 +47,27 @@ Here I combined all the parts into one, using a relay and an LED and a resistor,
 
 ![photo_2025-10-11_10-55-32](https://github.com/user-attachments/assets/83e17a95-42ed-482b-8ba0-95bdaffbf7cb)
 
+# Key changes/improvements for 2026:
+
+## Part 8.1. Upgrade to Sonoff R4
+I changed the esp8266 to an esp32. The esp32 and the relay were built into the sonoff R4 module, so I only had to flash the esp32 and install Tasmota.
+
+![photo_5_2026-01-31_09-54-09](https://github.com/user-attachments/assets/b576370d-01fd-449f-9536-dd0e29d1887a)
+
+<img width="353" height="810" alt="tasmota 1 1 jpg" src="https://github.com/user-attachments/assets/d2554f68-296f-47e2-b05a-c3390a4b4c2d" />
+
+## Part 8.2. Creating a case
+In order to make my project look like a regular mini-station, I had to create and print a 3D model of the [case]. Keep in mind that I already have active cooling for the case, which significantly changes the original dimensions.
+
+<img width="926" height="743" alt="весь корпус" src="https://github.com/user-attachments/assets/4a02ab51-2de7-46a6-8145-94737e3895e5" />
+
+## Part 8.3. Display and temperature sensor
+I also added the lcd1602 display (using the i2c protocol) and the DHT11 module to the project. Information about [lcd1602](https://peppe8o.com/1602-lcd-raspberry-pi-display/) and information about [dht11](https://www.raspberrypi-5.com/how-to-connect/how-to-connect-dht11-to-raspberry-pi/)
+
+![photo_4_2026-01-31_09-54-09](https://github.com/user-attachments/assets/01d97ac1-b48b-4dd1-8be1-a830fbf975f2)
+
+## Part 8.4. Mini withdrawal
+In general, the changes were more visual. I switched to a ready-made version in the form of a sonoff R4, and I also used a screen to display the program's status, including temperature and humidity data.
+
 ## Conclusions
-The developed system demonstrates the effectiveness of gesture control for deaf and dumb users, providing them with equal access to smart home technologies and increasing the level of independence and security.
+A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home.
