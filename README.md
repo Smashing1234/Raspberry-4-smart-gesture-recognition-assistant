@@ -75,16 +75,15 @@ To test the concept, a functional prototype of the system was assembled and impl
 
 - Results of the total delay of the fist recognition (from recognition to changing the relay state):
 
-<img width="819" height="455" alt="кулак фото" src="https://github.com/user-attachments/assets/b7e4740f-8f47-4ea8-82fa-f779c8fe7024" />
+<img width="743" height="430" alt="График кулаков в2" src="https://github.com/user-attachments/assets/61707994-d9af-47b8-8547-83173c7d237e" />
 
-- Results of the total delay of the "OK" gesture recognition (from recognition to changing the relay state):
+- Results of the total double-tap recognition delay (from recognition to change of the retransmission status):
 
-<img width="736" height="204" alt="хлопок фото" src="https://github.com/user-attachments/assets/85c3b8e9-eac4-44cf-9ee7-edfcc3217897" />
+<img width="843" height="261" alt="График хлопков в2" src="https://github.com/user-attachments/assets/188750c7-374e-4fa3-bf16-6070a07063a2" />
 
 - Program completion percentage results:
 
-<img width="935" height="598" alt="проц выпол фото" src="https://github.com/user-attachments/assets/b1fb3f2d-b13f-4756-861e-edd1d6178446" />
-
+<img width="1140" height="757" alt="Проц выпол в2" src="https://github.com/user-attachments/assets/72d5b394-a838-48ba-ae57-6cd107a250e1" />
 
 ## Conclusion
-A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home. Recognition accuracy: 72% (gestures), 65% (claps), execution delays vary from 1.5 to 3 seconds depending on the action
+A working prototype of an assistive system has been created. This prototype proves the possibility of recognizing gestures using a camera and lightweight algorithms on a Raspberry Pi. It functions as a prototype of a local platform for controlling devices over Wi-Fi and sending emergency alerts, offering a practical prototype of a solution for contactless interaction with a smart home. Recognition accuracy: 80% (gestures), 65% (claps), execution delays vary from 1.5 to 3 seconds depending on the action
