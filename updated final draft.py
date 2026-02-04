@@ -26,9 +26,9 @@ log_display_duration = 8
 TELEGRAM_BOT_TOKEN = ""
 TELEGRAM_CHAT_ID = ""
 
-MQTT_BROKER = "" #ip raspberry pi 4
+MQTT_BROKER = ""
 MQTT_PORT = 1883
-MQTT_TOPIC = "cmnd/sonoff/POWER"
+MQTT_TOPIC = ""
 MQTT_USER = "DVES_USER"
 MQTT_PASS = "147"
 
@@ -143,7 +143,7 @@ try:
         rate=RATE,
         input=True,
         frames_per_buffer=CHUNK,
-        input_device_index=1
+        input_device_index=3
     )
     print("✅ Microphone initialized")
     show_log_on_lcd("Microphone", "initialized")
@@ -352,56 +352,51 @@ try:
                 rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 results = hands.process(rgb)
 
-                current_ok_gesture = False
-                current_fist_gesture = False
+                ok_gesture = False
+                fist_gesture = False
                 current_gesture = "none"
 
                 if results.multi_hand_landmarks:
                     for hand_landmarks in results.multi_hand_landmarks:
                         mp_draw.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
 
-                        landmarks = []
+                        points = []
                         for point in hand_landmarks.landmark:
                             x = int(point.x * w)
                             y = int(point.y * h)
-                            landmarks.append((x, y))
+                            points.append((x, y))
 
-                        thumb_tip = landmarks[4]
-                        index_tip = landmarks[8]
-                        middle_tip = landmarks[12]
-                        ring_tip = landmarks[16]
-                        pinky_tip = landmarks[20]
+                        thumb_tip = points[4]
+                        index_tip = points[8]
+                        middle_tip = points[12]
+                        ring_tip = points[16]
+                        pinky_tip = points[20]
 
-                        index_pip = landmarks[6]
-                        index_dip = landmarks[7]
-                        middle_pip = landmarks[10]
-                        middle_dip = landmarks[11]
-                        ring_pip = landmarks[14]
-                        ring_dip = landmarks[15]
-                        pinky_pip = landmarks[18]
-                        pinky_dip = landmarks[19]
+                        middle_pip = points[10]
+                        middle_dip = points[11]
+                        ring_pip = points[14]
+                        ring_dip = points[15]
+                        pinky_pip = points[18]
+                        pinky_dip = points[19]
 
                         dx = thumb_tip[0] - index_tip[0]
                         dy = thumb_tip[1] - index_tip[1]
                         distance = (dx * dx + dy * dy) ** 0.5
 
-                        middle_extended = is_finger_extended(middle_pip, middle_dip, middle_tip)
-                        ring_extended = is_finger_extended(ring_pip, ring_dip, ring_tip)
-                        pinky_extended = is_finger_extended(pinky_pip, pinky_dip, pinky_tip)
+                        middle_up = middle_tip[1] < middle_pip[1] and middle_tip[1] < middle_dip[1]
+                        ring_up = ring_tip[1] < ring_pip[1] and ring_tip[1] < ring_dip[1]
+                        pinky_up = pinky_tip[1] < pinky_pip[1] and pinky_tip[1] < pinky_dip[1]
 
-                        if (distance < max_distance and
-                                middle_extended and
-                                ring_extended and
-                                pinky_extended):
-                            current_ok_gesture = True
+                        if distance < max_distance and middle_up and ring_up and pinky_up:
+                            ok_gesture = True
 
                         current_gesture = detect_gesture(hand_landmarks, h, w)
                         if current_gesture == "fist":
-                            current_fist_gesture = True
+                            fist_gesture = True
 
                 current_time = time.time()
 
-                if current_ok_gesture:
+                if ok_gesture:
                     if not gesture_detected:
                         gesture_detected = True
                         gesture_start_time = current_time
@@ -430,7 +425,7 @@ try:
                 else:
                     gesture_detected = False
 
-                if current_fist_gesture:
+                if fist_gesture:
                     current_time = time.time()
                     if not fist_detected:
                         fist_detected = True
